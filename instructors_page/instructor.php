@@ -13,8 +13,8 @@
     <?php include '../navbar/navbar.php'; ?>
     <div class="container-fluid buttons">
         <div class="row">
-            <div class="col-9 me-1  ">
-                <div class="container d-flex search">
+            <div class="col-9 me-1">
+                <div class="container d-flex search justify-content-start">
                     <i class="bi bi-search fs-3"></i>
                     <input type="email" class="form-control email" id="exampleFormControlInput1" placeholder="Search">
                 </div>
