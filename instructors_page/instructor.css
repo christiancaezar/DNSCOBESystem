@@ -1,10 +1,12 @@
-.buttons{
+.padd{
     padding: 69px 200px;
 }
 
 .email{
     width: 316px;
     height: 52px;
-    border: none;
 }
 
+.table-group-divider{
+    color: #353535;
+}

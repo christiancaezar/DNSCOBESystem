@@ -11,18 +11,50 @@
 </head>
 <body>
     <?php include '../navbar/navbar.php'; ?>
-    <div class="container-fluid buttons">
-        <div class="row">
-            <div class="col-9 me-1">
-                <div class="container d-flex search justify-content-start">
-                    <i class="bi bi-search fs-3"></i>
-                    <input type="email" class="form-control email" id="exampleFormControlInput1" placeholder="Search">
-                </div>
-            </div>
-            <div class="col-3">
-
-            </div>
+    <div class="container-fluid d-inline-flex padd justify-content-between pb-4">
+        <div class="input-group flex-nowrap email">
+            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search fs-3 d-flex"></i></span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
+        <button type="button" class="btn btn-success">Add instructor</button>
+    </div>
+
+    <div class="container-fluid padd pt-0">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Program</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Christian Caezar</td>
+                    <td>BS Information Technology</td>
+                    <td class="d-flex">
+                        <button type="button" class="btn btn-danger me-2 d-flex"><i class="bi bi-trash-fill fs-5 d-flex pe-2"></i>Delete</button>
+                        <button type="button" class="btn btn-warning me-2 d-flex"><i class="bi bi-pen-fill fs-5 d-flex pe-2"></i>Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Albert Einstein</td>
+                    <td>BS Information Systems</td>
+                    <td class="d-flex">
+                        <button type="button" class="btn btn-danger me-2 d-flex"><i class="bi bi-trash-fill fs-5 d-flex pe-2"></i>Delete</button>
+                        <button type="button" class="btn btn-warning me-2 d-flex"><i class="bi bi-pen-fill fs-5 d-flex pe-2"></i>Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thomas Hobbes</td>
+                    <td>BS Information Technology</td>
+                    <td class="d-flex">
+                        <button type="button" class="btn btn-danger me-2 d-flex"><i class="bi bi-trash-fill fs-5 d-flex pe-2"></i>Delete</button>
+                        <button type="button" class="btn btn-warning me-2 d-flex"><i class="bi bi-pen-fill fs-5 d-flex pe-2"></i>Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
