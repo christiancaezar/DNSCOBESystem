@@ -7,12 +7,12 @@
     height: 40px;
 }
 
-.add-instructor{
+.add-course-subject{
     background-color: #005E00;
     color: white;
 }
 
-.add-instructor:hover{
+.add-course-subject:hover{
     background-color: #004700;
     color: white;
 }
