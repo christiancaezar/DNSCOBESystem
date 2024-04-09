@@ -60,7 +60,9 @@
 
     </style>
     <body>
-    <?php include 'navbar/navbar.php'; ?>
+    <?php
+        include 'navbar/navbar.php'; 
+    ?>
         
        
 <div class="upperBody">
