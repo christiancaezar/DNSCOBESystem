@@ -19,6 +19,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/DNSCOBESystem/course_subject_page/course_subject.php" id="course">Course Subjects</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/DNSCOBESystem/add_grades_page/grades.php" id="course">Course Subjects</a>
+                    </li>
                 </ul>
             </div>
         </div>
