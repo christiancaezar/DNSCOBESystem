@@ -22,6 +22,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/OBE System/add_grades_page/grades.php" id="course">Grades</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/DNSCOBESystem/add_grades_page/grades.php" id="course">Course Subjects</a>
+                    </li>
                 </ul>
             </div>
         </div>
