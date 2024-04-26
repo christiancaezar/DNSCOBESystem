@@ -14,13 +14,17 @@
         $location = '../assets';
         include '../navbar/navbar.php';
     ?>
+
+
     <div class="container-fluid content">
         <div class="hstack mb-3">
             <div class="input-group flex-nowrap search">
+                
                 <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search fs-4 d-flex"></i></span>
-                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
             </div>
-            <button type="button" class="btn d-flex ms-auto add-course-subject"><i class="bi bi-plus fs-4 d-flex"></i>Add course subject</button>
+            <button type="button" class="btn d-flex ms-auto add-course-subject" data-bs-toggle="modal" data-bs-target="#viewModal2"><i class="bi bi-plus fs-4 d-flex"></i>Add CO Grades</button>
+            
         </div>
         <table class="table">
                 <thead>
@@ -149,6 +153,7 @@
                         </td>
                     </tr>
                 </tbody>
+                
             </table>
         <div class="container d-flex justify-content-end align-items-center page-count">
             <button type="button" class="btn no-outline"><i class="bi bi-caret-left-fill fs-5"></i></button>
@@ -156,6 +161,8 @@
             <button type="button" class="btn"><i class="bi bi-caret-right-fill fs-5"></i></button>
         </div>
     </div>
+
+    
 
                 <!-- Modal -->
             <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -185,6 +192,60 @@
                         </tbody>
 
                     </table>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" style="background-color:#005E00;">Save changes</button>
+                </div>
+                </div>
+            </div>  
+            </div>
+
+            <!-- modal 2 -->
+            <div class="modal fade" id="viewModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                <div class="modal-header" style="background-color: #005E00;">
+                    <h5 class="modal-title" style="color:aliceblue;" id="ModalLongTitle">Add Course Outcome Grades</h5>
+
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Course Code</span>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect02" style="width: 200px;">
+                                <option selected></option>
+                                <option value="1">IT 111</option>
+                                <option value="2">IT 112</option>
+                                <option value="3">IT 113</option>
+                            </select>
+
+                            <div class="input-group-prepend">
+                        <span class="input-group-text" style="margin-left: 20px;" id="">Instructor</span>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect02" style="width: 200px;">
+                                <option selected></option>
+                                <option value="1">Vengie Nohara</option>
+                                <option value="2">Vengie Nohara</option>
+                                <option value="3">Vengie Nohara</option>
+                            </select>
+                    </div>
+                   
+                   
+                <div class="container" style="margin-top:10px">
+                 <span>Course Outcomes</span>
+                  <!-- <div class="input-group">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" style="margin-left: 20px;" id="">CO1</span>
+                    </div> 
+                    <select class="custom-select" id="inputGroupSelect02" style="width: 200px;">
+
+                    </div> -->
+                </div>
+            </form>
                     
                 </div>
                 <div class="modal-footer">
